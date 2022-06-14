@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<?xml-model
+  href="http://download.ros.org/schema/package_format3.xsd"
+  schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>webscraping_ros</name>
+  <version>0.0.1</version>
+  <description>webscraping_ros: webscraping service for ROS</description>
+  <maintainer email="tsukamoto@jsk.imi.i.u-tokyo.ac.jp">Naoto Tsukamoto</maintainer>
+  
+  <license>MIT</license>
+
+  <url type="website">http://ros.org/wiki/webscraping_ros</url>
+
+  <author email="tsukamoto@jsk.imi.i.u-tokyo.ac.jp">Naoto Tsukamoto</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <exec_depend>python-bs4</exec_depend>
+
+</package>
