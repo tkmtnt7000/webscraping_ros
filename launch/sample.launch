@@ -1,0 +1,24 @@
+<launch>
+  <arg name="launch_get_tips" default="true" />
+  <arg name="launch_get_place" default="true" />
+  <arg name="launch_get_weather_forecast" default="true" />
+  <arg name="launch_get_fortune" default="true" />
+
+  <node if="$(arg launch_get_tips)"
+        name="get_tips" pkg="webscraping_ros" type="get_tips"
+        output="screen">
+  </node>
+  <node if="$(arg launch_get_place)"
+        name="get_place" pkg="webscraping_ros" type="get_place"
+        output="screen">
+  </node>
+  <node if="$(arg launch_get_weather_forecast)"
+        name="get_weather_forecast" pkg="webscraping_ros" type="get_weather_forecast"
+        output="screen">
+  </node>
+  <node if="$(arg launch_get_fortune)"
+        name="get_fortune" pkg="webscraping_ros" type="get_fortune"
+        output="screen">
+  </node>
+
+</launch>
