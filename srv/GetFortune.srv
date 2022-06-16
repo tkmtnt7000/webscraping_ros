@@ -1,0 +1,6 @@
+string constellation # constellation name [ja]
+uint32 birthday_month
+uint32 birthday_day
+---
+bool success
+string message
